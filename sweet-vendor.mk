@@ -299,6 +299,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/firmware/a615_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.mdt \
     vendor/xiaomi/sweet/proprietary/vendor/firmware/a618_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a618_gmu.bin \
     vendor/xiaomi/sweet/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/a650_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_gmu.bin \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/a650_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_sqe.fw \
+    vendor/xiaomi/sweet/proprietary/vendor/firmware/a650_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.elf \
     vendor/xiaomi/sweet/proprietary/vendor/firmware/aw8624_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8624_haptic.bin \
     vendor/xiaomi/sweet/proprietary/vendor/firmware/aw8624_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8624_rtp.bin \
     vendor/xiaomi/sweet/proprietary/vendor/firmware/awinic/aw882xx_pid_1852_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic/aw882xx_pid_1852_acf.bin \
@@ -417,7 +420,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofencing.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnss.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
-    vendor/xiaomi/sweet/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/xiaomi/sweet/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
@@ -488,6 +490,8 @@ PRODUCT_PACKAGES += \
     libq3dtools_esx \
     vulkan.adreno \
     libC2D2 \
+    libCB \
+    libOpenCL \
     libStDrvInt \
     libVkLayer_q3dtools \
     libadreno_app_profiles \
@@ -503,7 +507,11 @@ PRODUCT_PACKAGES += \
     libgpudataproducer \
     libgsl \
     libidl \
+    libkcl \
+    libkernelmanager \
     libllvm-glnext \
+    libllvm-qcom \
+    libllvm-qgl \
     libmdmdetect \
     libmmosal_vendor \
     libqmi \
@@ -673,12 +681,10 @@ PRODUCT_PACKAGES += \
     lib-rtpsl \
     lib-siputility \
     lib-uceservice \
-    libCB \
     libFaceDetectpp-0.5.2 \
     libFaceGrade \
     libGPreqcancel \
     libGPreqcancel_svc \
-    libOpenCL \
     libPSNPE \
     libQSEEComAPI \
     libSNPE \
@@ -735,11 +741,8 @@ PRODUCT_PACKAGES += \
     libhta_hexagon_runtime \
     libhvx_interface \
     libjnihelper \
-    libkcl \
-    libkernelmanager \
     libkeymasterdeviceutils \
     libkeymasterutils \
-    libllvm-qcom \
     liblqe \
     libmdsprpc \
     libmiai_portraitsupernight \
