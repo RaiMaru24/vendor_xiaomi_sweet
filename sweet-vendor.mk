@@ -517,6 +517,7 @@ PRODUCT_PACKAGES += \
     libhdmiedid \
     libhfp \
     libqcodec2 \
+    libqtigef \
     libsndmonitor \
     libspkrprot \
     libvppclient \
