@@ -473,7 +473,6 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker_stub \
     libsecureui \
     libsecureui_svcsock \
-    libswvdec \
     libvpphvx \
     libvpplibrary \
     vendor.qti.hardware.vpp@1.1 \
@@ -485,20 +484,15 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
     libAlacSwDec \
     libApeSwDec \
-    libMpeg4SwEncoder \
     libOmxAacDec \
     libOmxAlacDec \
-    libOmxAlacDecSw \
     libOmxAmrDec \
     libOmxAmrwbplusDec \
     libOmxApeDec \
-    libOmxApeDecSw \
     libOmxDsdDec \
     libOmxEvrcDec \
     libOmxG711Dec \
     libOmxQcelp13Dec \
-    libOmxSwVdec \
-    libOmxSwVencMpeg4 \
     libOmxVideoDSMode \
     libOmxVpp \
     libOmxWmaDec \
@@ -778,6 +772,7 @@ PRODUCT_PACKAGES += \
     libssccalapi \
     libssd \
     libswregistrationalgo \
+    libswvdec \
     libsymphony-cpu \
     libsystem_health_mon \
     libthermalclient \
